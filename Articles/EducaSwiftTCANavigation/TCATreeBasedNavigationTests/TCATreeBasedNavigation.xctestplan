@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "FCA4EAEA-43AB-49CF-81B0-6ED21C3E65B4",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:EducaSwiftTCANavigation.xcodeproj",
+      "identifier" : "675F0B152D1D9FD800FFAB61",
+      "name" : "TCATreeBasedNavigation"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:EducaSwiftTCANavigation.xcodeproj",
+        "identifier" : "675F0B5A2D22B6A800FFAB61",
+        "name" : "TCATreeBasedNavigationTests"
+      }
+    }
+  ],
+  "version" : 1
+}

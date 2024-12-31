@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>TCAStackBasedNavigation.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>TCATreeBasedNavigation.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>675F0B002D1D9F9A00FFAB61</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>675F0B152D1D9FD800FFAB61</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>675F0B272D1D9FEA00FFAB61</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>675F0B4D2D22B64B00FFAB61</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>675F0B5A2D22B6A800FFAB61</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
