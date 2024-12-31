@@ -38,6 +38,8 @@ public struct HexColorMacro: ExpressionMacro {
         of node: some FreestandingMacroExpansionSyntax,
         in context: some MacroExpansionContext
     ) throws -> ExprSyntax {
+
+        // Get and check input parameter
         guard let argument = node.arguments.first?.expression,
               let segments = argument.as(StringLiteralExprSyntax.self)?.segments,
               segments.count == 1,
@@ -46,10 +48,12 @@ public struct HexColorMacro: ExpressionMacro {
             throw HexColorMacroError.inputNotValid
         }
 
+        // Check the length of the input String
         guard literalSegment.content.text.count == 6 || literalSegment.content.text.count == 8 else {
             throw HexColorMacroError.lengthNotValid
         }
 
+        // Convert hex String to Color
         let hex = literalSegment.content.text.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
         var int: UInt64 = 0
         Scanner(string: hex).scanHexInt64(&int)
@@ -65,6 +69,7 @@ public struct HexColorMacro: ExpressionMacro {
             (a, r, g, b) = (1, 1, 1, 0)
         }
 
+        // Return Color as an expression.
         return """
             Color(
                 .sRGB,
